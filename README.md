@@ -126,10 +126,10 @@ Ideal para pruebas de conectividad, autenticación y consumo de servicios REST p
 
     # content-model
     mvn install:install-file \
-      -Dfile=lib/content-model-1.0.jar \
+      -Dfile=lib/content-model-1.2.jar \
       -DgroupId=com.kadme \
       -DartifactId=content-model \
-      -Dversion=1.0 \
+      -Dversion=1.2 \
       -Dpackaging=jar
 
     # htmllexer
@@ -170,6 +170,14 @@ Ideal para pruebas de conectividad, autenticación y consumo de servicios REST p
       -DgroupId=com.kadme \
       -DartifactId=ont-wrstools \
       -Dversion=4.4 \
+      -Dpackaging=jar
+
+    # commons-text 
+    mvn install:install-file \
+      -Dfile=lib/commons-text-1.7.jar \
+      -DgroupId=org.apache.commons \
+      -DartifactId=commons-text \
+      -Dversion=1.7.0 \
       -Dpackaging=jar
 
     echo "Todos los JARs han sido instalados localmente en Maven."
